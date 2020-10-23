@@ -1,0 +1,26 @@
+[package]
+name = "tropical_learning"
+version = "0.1.0"
+authors = ["anonymous"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num = "0.2.1"
+rand = { version = "0.7.2", features = ["small_rng"] }
+bimap = "0.4.0"
+itertools = "0.9.0"
+lru = "0.6.0"
+nalgebra = "0.20"
+serde = { version = "1.0.115", features = ["derive"]}
+serde_json = "1.0"
+getopts = "0.2"
+chrono = "0.4"
+
+
+[profile.dev]
+opt-level = 3               # Use slightly better optimizations.]
+
+[profile.test]
+opt-level = 3               # Use slightly better optimizations.]
